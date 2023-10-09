@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        
+        Chart Js</title>
+    <link rel="stylesheet" href="./main.css"> 
+    <link rel="stylesheet" href="C:\Users\Jared\OneDrive\Desktop\TestWeb\Fuentes\all.min.css">  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+
+    <header>
+       <div class="titulo">
+        <h1>SISTEMA DE MONITOREO Y PREVENCION CONTRA INCENDIOS</h1>
+        <h2><span class="blue">Club</span> <span class="red">Positrones</span></h2>
+       </div>
+        <nav class="navbar">
+            <ul class="navbar__ul">
+               <li class="navbar__li"><a href="#">INICIO</a></li>
+               <li class="navbar__li"><a href="#TEMPERATURA">TEMPERATURA</a></li>
+               <li class="navbar__li"><a href="#CO2">CO2</a></li>
+               <li class="navbar__li"><a href="#HUMEDAD">HUMEDAD</a></li>
+               <li class="navbar__li"><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="summary">
+            <div class="summary__header">
+                <h1>RESUMEN DE ULTIMAS 24 HORAS</h1>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>TEMPERATURA MAXIMA</h2>
+                    <span>39.7<span class="symbol">°C</span> </span>
+                </div>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>TEMPERATURA MINIMA</h2>
+                    <span>24.2<span class="symbol">°C</span></span>
+                </div>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>TEMPERATURA PROMEDIO</h2>
+                    <span>31.9<span class="symbol">°C</span></span>
+                </div>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>CO2</h2>
+                    <span>360<span class="symbol">ppm</span></span>
+                </div>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>HUMEDAD</h2>
+                    <span>60<span class="symbol">%</span></span>
+                </div>
+            </div>
+            <div class="summary__box">
+                <div class="summary__boxHeader">
+                    <h2>HORA CRITICA</h2>
+                    <span>3:24<span class="symbol">PM</span></span>
+                </div>
+            </div>
+        </section>
+      <section class="content">
+        <div class="graph">
+            <h1 id="TEMPERATURA">ANALISIS DE TEMPERATURA</h1>
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="graph circle">
+            <h1 id="CO2">ANALISIS DE CO2</h1>
+            <canvas id="modelschart"></canvas>
+        </div>
+        <div class="graph circle">
+            <h1 id="HUMEDAD">ANALISIS DE HUMEDAD</h1>
+            <canvas id="modelschartTwo"></canvas>
+        </div>
+      </section>
+    </main>
+
+
+</body>
+</html>
