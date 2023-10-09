@@ -166,4 +166,7 @@ main{
     .navbar__li a{
         border-bottom: 3px solid #d36d06;
     }
+    header{
+        position: relative;
+    }
 }
