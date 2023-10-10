@@ -5,9 +5,18 @@ const printCharts = () => {
 
 const renderModelChart = () => {
     const data = {
-        labels: ["Conradin", "Jared", "Manolo", 'Memin', 'Gatita'],
+        labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
         datasets: [{
+            label: "Niveles de lectura",
             data: [10,11,30, 5, 19]
+
+        }]
+    }
+    const humity = {
+        labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
+        datasets: [{
+            label: "Niveles de humedad",
+            data: [13,15,20, 2, 1]
 
         }]
     }
@@ -17,13 +26,13 @@ const renderModelChart = () => {
 
 printCharts()
 
-const area = ["A1", "A2", "B1", "B2"]
-const temperature = [19.4, 27.3, 50.9, 37.5]
+const area = ["13:00", "15:00", "17:00", '19:00', '21:00']
+const temperature = [19.4, 27.3, 50.9, 37.5, 12.1]
 
 const myChart = new Chart(ctx1, {
     type: "line",
     data: {
-        labels: "area",
+        labels: ["13:00", "15:00", "17:00", '19:00', '21:00'],
         datasets: [{
             label: "temperatura",
             data: temperature,
